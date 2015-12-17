@@ -17,7 +17,8 @@
   },
   "dependencies": {
     "xmlhttprequest": "",
-    "promise": ""
+    "promise": "",
+    "cli-table": ""
   },
   "engines": {
     "node": ">=0.4.0"
