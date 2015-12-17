@@ -1,0 +1,29 @@
+{
+  "name": "ripple-commander",
+  "description": "A command line tool for ripple trading.",
+  "version": "0.0.1",
+  "homepage": "https://github.com/kuyur/ripple-commander",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kuyur/ripple-commander.git"
+  },
+  "keywords": [
+    "ripple",
+    "xrp"
+  ],
+  "author": {
+    "name": "kuyur",
+    "email": "kuyur@kuyur.info"
+  },
+  "dependencies": {
+    "xmlhttprequest": "",
+    "promise": ""
+  },
+  "engines": {
+    "node": ">=0.4.0"
+  },
+  "bugs": {
+    "url": "https://github.com/kuyur/ripple-commander/issues"
+  },
+  "license": "MIT"
+}
