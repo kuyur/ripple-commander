@@ -46,9 +46,24 @@ if (account && secret) {
   });
   cli.start(rl);
 } else {
-  rl.question('Ripple Account:', function(answer) {
+  rl.question('Ripple Account: ', function(answer) {
     account = answer;
-    rl.question('Ripple Secret:', function(answer) {
+    // show ****** for password
+    var question = 'Ripple Secret : ';
+    var onDataHandler = function(chr) {
+      chr = '' + chr;
+      switch (chr) {
+        case '\n':
+        case '\r':
+        case '\u0004':
+          process.stdin.removeListener('data', onDataHandler);
+          break;
+        default:
+          process.stdout.write('\033[2K\033[200D' + question + Array(rl.line.length + 1).join('*'));
+      }
+    };
+    process.stdin.on('data', onDataHandler);
+    rl.question(question, function(answer) {
       secret = answer;
       saveAccount(account, secret);
       var cli = new RippleCLI({
