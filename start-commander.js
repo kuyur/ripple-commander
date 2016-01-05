@@ -1,6 +1,6 @@
 
 var fs = require('fs');
-var readline = require('readline');
+var readlineSync = require('readline-sync');
 var RippleCLI = require('./lib/ripple-cli.js');
 
 var account, secret;
@@ -25,11 +25,6 @@ try {
   // 
 }
 
-var rl = readline.createInterface({
-  input: process.stdin,
-  output: process.stdout
-});
-
 function saveAccount(account, secret) {
   var buffer = new Buffer('address=' + account + ',secret=' + secret, 'binary');
   fs.open('account.txt', 'a', function(err, fd) {
@@ -39,38 +34,15 @@ function saveAccount(account, secret) {
   });
 }
 
-if (account && secret) {
-  var cli = new RippleCLI({
-    account: account,
-    secret: secret
+if (!account || !secret) {
+  account = readlineSync.question('Ripple Account: ');
+  secret = readlineSync.question('Ripple Secret : ', {
+    hideEchoBack: true
   });
-  cli.start(rl);
-} else {
-  rl.question('Ripple Account: ', function(answer) {
-    account = answer;
-    // show ****** for password
-    var question = 'Ripple Secret : ';
-    var onDataHandler = function(chr) {
-      chr = '' + chr;
-      switch (chr) {
-        case '\n':
-        case '\r':
-        case '\u0004':
-          process.stdin.removeListener('data', onDataHandler);
-          break;
-        default:
-          process.stdout.write('\033[2K\033[200D' + question + Array(rl.line.length + 1).join('*'));
-      }
-    };
-    process.stdin.on('data', onDataHandler);
-    rl.question(question, function(answer) {
-      secret = answer;
-      saveAccount(account, secret);
-      var cli = new RippleCLI({
-        account: account,
-        secret: secret
-      });
-      cli.start(rl);
-    });
-  });
+  saveAccount(account, secret);
 }
+
+new RippleCLI({
+  account: account,
+  secret: secret
+}).start();
