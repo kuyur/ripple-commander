@@ -56,5 +56,5 @@ A command line tool for ripple trading.
 
 **Get transaction status**
 
-        get-transaction
+        get-transaction <hash>
 
