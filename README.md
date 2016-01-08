@@ -38,7 +38,7 @@ A command line tool for ripple trading.
 
         send <destination> <amount+currency+issuer> [ --source-tag=<source_tag> ] [ --destination-tag=<destination_tag> ] [ --invoice-id=<invoice_id> ]
 
-**Send money to bridge**, for example `send-to-bridge zfb@ripplefox.com 100`
+**Send money to bridge**, for example `send-to-bridge zfb@ripplefox.com 100`, you will be asked for detail later.
 
         send-to-bridge <destination> <amount>
 
