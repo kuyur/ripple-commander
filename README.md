@@ -51,6 +51,10 @@ If you appreciate the work, welcome donate some xrp to `rscxz5PqRrmUaMigyb1mP32T
 
         get-payments
 
+**Get orders**
+
+        get-orders
+
 **Place an order**, type can be `sell` or `buy`.
 
         place-order <type> <amount1+currency1+issuer1> <amount2+currency2+issuer2>
