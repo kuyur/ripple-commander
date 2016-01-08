@@ -1,5 +1,6 @@
 # ripple-commander
-A command line tool for ripple trading.
+A command line tool for ripple trading.  
+If you appreciate the work, welcome donate some xrp to `rscxz5PqRrmUaMigyb1mP32To1rQDygxAq` .
 
 ## Usage
 1. Install nodejs (>=0.4.0).
@@ -62,3 +63,10 @@ A command line tool for ripple trading.
 
         get-transaction <hash>
 
+## Remain tasks
+
+* Support multiple accounts and switching.
+* Encrypt account.txt .
+* Show order book of market.
+* Command auto-complete.
+* Pipe.
