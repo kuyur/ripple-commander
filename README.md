@@ -36,7 +36,11 @@ A command line tool for ripple trading.
 
 **Send money**
 
-        pay <destination> <currency+issuer> <amount>
+        send <destination> <amount+currency+issuer> [ --source-tag=<source_tag> ] [ --destination-tag=<destination_tag> ] [ --invoice-id=<invoice_id> ]
+
+**Send money to bridge**, for example `send-to-bridge zfb@ripplefox.com 100`
+
+        send-to-bridge <destination> <amount>
 
 **Get payment detail**
 
@@ -48,7 +52,7 @@ A command line tool for ripple trading.
 
 **Place an order**, type can be `sell` or `buy`.
 
-        place-order <type> <currency+issuer> <amount> <currency+issuer> <amount>
+        place-order <type> <amount1+currency1+issuer1> <amount2+currency2+issuer2>
 
 **Cancel an order**
 
