@@ -4,7 +4,7 @@ ripple-commander
 ###0.1.2
 
 > * File for saving ripple account is changed from `account.txt` to `wallet.txt`.
-> * Use AES to encrypt wallet file. (After encryption, `wallet.txt` will be deleted, and `wallet.data` will be generated.)
+> * Use AES to encrypt wallet file. (After encryption, `wallet.txt` will be deleted, and `wallet.dat` will be generated.)
 > * Command: `encrypt-wallet`
 > * Command: `decrypt-wallet`
 
