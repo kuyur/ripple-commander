@@ -1,5 +1,5 @@
 # ripple-commander
-A command line tool for ripple trading.  
+A command line client for ripple trading.  
 If you appreciate the work, welcome donate some xrp to `rscxz5PqRrmUaMigyb1mP32To1rQDygxAq` .
 
 ## Usage
