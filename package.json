@@ -18,8 +18,7 @@
   "dependencies": {
     "xmlhttprequest": "",
     "promise": "",
-    "cli-table": "",
-    "readline-sync": ""
+    "cli-table": ""
   },
   "engines": {
     "node": ">=0.4.0"

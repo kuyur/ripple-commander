@@ -1,6 +1,7 @@
 
 var fs = require('fs');
-var readlineSync = require('readline-sync');
+var readline = require('readline');
+var ReadlineUtils = require('./lib/readline-utils.js');
 var RippleCLI = require('./lib/ripple-cli.js');
 
 var account, secret;
@@ -34,15 +35,30 @@ function saveAccount(account, secret) {
   });
 }
 
-if (!account || !secret) {
-  account = readlineSync.question('Ripple Account: ');
-  secret = readlineSync.question('Ripple Secret : ', {
-    hideEchoBack: true
+var readline = readline.createInterface({
+  input: process.stdin,
+  output: process.stdout
+});
+
+var promise;
+if (account && secret) {
+  promise = Promise.resolve();
+} else {
+  promise = ReadlineUtils.question(readline, 'Ripple Account: ');
+  promise = promise.then(function(answer) {
+    account = answer;
+    return ReadlineUtils.password(readline, 'Ripple Secret : ');
   });
-  saveAccount(account, secret);
+  promise = promise.then(function(answer) {
+    secret = answer;
+    saveAccount(account, secret);
+  });
 }
 
-new RippleCLI({
-  account: account,
-  secret: secret
-}).start();
+promise.then(function() {
+  new RippleCLI({
+    account: account,
+    secret: secret,
+    readline: readline
+  }).start();
+});
