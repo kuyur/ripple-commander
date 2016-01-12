@@ -12,7 +12,7 @@ If you appreciate the work, welcome donate some xrp to `rscxz5PqRrmUaMigyb1mP32T
 
         npm install
 
-4. Run commander.
+4. Run commander. Account (ripple address) and secret will be required for the first time.
 
         node start-commander.js
 
@@ -67,10 +67,17 @@ If you appreciate the work, welcome donate some xrp to `rscxz5PqRrmUaMigyb1mP32T
 
         get-transaction <hash>
 
+**Encrypt wallet**
+
+        encrypt-wallet
+
+**Decrypt wallet**
+
+        decrypt-wallet
+
 ## Remain tasks
 
 * Support multiple accounts and switching.
-* Encrypt account.txt .
 * Show order book of market.
 * Command auto-complete.
 * Pipe.
