@@ -3,7 +3,7 @@ A command line client for ripple trading.
 If you appreciate the work, welcome donate some xrp to `rscxz5PqRrmUaMigyb1mP32To1rQDygxAq` .
 
 ## Usage
-1. Install nodejs (>=0.4.0).
+1. Install nodejs (>=4.0.0).
 2. Checkout out the source code.
 
         git clone https://github.com/kuyur/ripple-commander.git
