@@ -1,6 +1,7 @@
 
 var fs = require('fs');
 var readline = require('readline');
+var Promise = require('promise');
 var CryptoJS = require('crypto-js');
 var FsUtils = require('./lib/fs-utils.js');
 var ReadlineUtils = require('./lib/readline-utils.js');
