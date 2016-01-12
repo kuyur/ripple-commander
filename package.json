@@ -18,7 +18,8 @@
   "dependencies": {
     "xmlhttprequest": "",
     "promise": "",
-    "cli-table": ""
+    "cli-table": "",
+    "crypto-js": ""
   },
   "engines": {
     "node": ">=0.4.0"
