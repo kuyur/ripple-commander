@@ -75,9 +75,24 @@ If you appreciate the work, welcome donate some xrp to `rscxz5PqRrmUaMigyb1mP32T
 
         decrypt-wallet
 
+**Show all accounts in wallet**, the top one is the account currently in use.
+
+        show-accounts [ --show-secret ]
+
+**Add an account into wallet**
+
+        add-account [ <address> ]
+
+**Change the activated account (account currently in use)**
+
+         change-account [ <address> ]
+
+**Remove an account from wallet**
+
+         remove-account [ <address> ]
+
 ## Remain tasks
 
-* Support multiple accounts and switching.
 * Show order book of market.
 * Command auto-complete.
 * Pipe.
