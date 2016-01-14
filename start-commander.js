@@ -40,7 +40,7 @@ promise = promise.then(function(data) {
 promise = promise.then(function(content) {
   if (content) {
     // read main account from the top line
-    var arr = content.split('\n');
+    var arr = content.replace(/\r\n/g, '\n').split('\n');
     for (var i = 0, len = arr.length; i < len; ++i) {
       var line = arr[i];
       if (line) {
