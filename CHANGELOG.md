@@ -1,6 +1,14 @@
 ripple-commander
 ================
 
+###0.1.3
+
+> * Implement ripple account management.
+> * Command: `show-accounts [ --show-secret ]`
+> * Command: `add-account [ <address> ]`
+> * Command: `change-account [ <address> ]`
+> * Command: `remove-account [ <address> ]`
+
 ###0.1.2
 
 > * File for saving ripple account is changed from `account.txt` to `wallet.txt`.
