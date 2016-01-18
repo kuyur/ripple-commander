@@ -1,6 +1,10 @@
 ripple-commander
 ================
 
+###0.1.6
+
+> * Bug fixed: Command will become non-responsive if user enters empty account or password for first login.
+
 ###0.1.5
 
 > * (No significant changes)

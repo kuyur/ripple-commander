@@ -64,6 +64,9 @@ promise = promise.then(function(content) {
       return ReadlineUtils.password(readline, 'Ripple Secret : ');
     }).then(function(answer) {
       secret = answer;
+      if (!account || !answer) {
+        return Promise.reject('Invalid account or secret. Please retry again.');
+      }
       console.log('Saving to ' + (password != null ? 'wallet.dat' : 'wallet.txt') + ' ...');
       saveAccount(account, secret, password);
     });
