@@ -101,6 +101,5 @@ If you appreciate the work, welcome donate some xrp to `rscxz5PqRrmUaMigyb1mP32T
 
 ## Remain tasks
 
-* Show order book of market.
 * Command auto-complete.
 * Pipe.
