@@ -1,6 +1,11 @@
 ripple-commander
 ================
 
+###0.1.4
+
+> * Command: `get-orderbook <currency1+issuer1> <currency2+issuer2> [ --limit=<limit> ]`
+> * Command: `show-issuers [ --keyword=<issuer_name> ]`
+
 ###0.1.3
 
 > * Implement ripple account management.

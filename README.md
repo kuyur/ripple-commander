@@ -63,17 +63,17 @@ If you appreciate the work, welcome donate some xrp to `rscxz5PqRrmUaMigyb1mP32T
 
         cancel-order <sequence>
 
+**Get orderbook of currency pair**
+
+        get-orderbook <currency1+issuer1> <currency2+issuer2> [ --limit=<limit> ]
+
 **Get transaction status**
 
         get-transaction <hash>
 
-**Encrypt wallet**
+**Show list of trusted issuers**, you can add custom gateway by editing `issuers.json`. Refer to `issuers.json.sample` for example.
 
-        encrypt-wallet
-
-**Decrypt wallet**
-
-        decrypt-wallet
+        show-issuers [ --keyword=<issuer_name> ]
 
 **Show all accounts in wallet**, the top one is the account currently in use.
 
@@ -85,11 +85,19 @@ If you appreciate the work, welcome donate some xrp to `rscxz5PqRrmUaMigyb1mP32T
 
 **Change the activated account (account currently in use)**
 
-         change-account [ <address> ]
+        change-account [ <address> ]
 
 **Remove an account from wallet**
 
-         remove-account [ <address> ]
+        remove-account [ <address> ]
+
+**Encrypt wallet**
+
+        encrypt-wallet
+
+**Decrypt wallet**
+
+        decrypt-wallet
 
 ## Remain tasks
 
