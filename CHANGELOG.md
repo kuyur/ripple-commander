@@ -1,6 +1,10 @@
 ripple-commander
 ================
 
+###0.1.5
+
+> * (No significant changes)
+
 ###0.1.4
 
 > * Command: `get-orderbook <currency1+issuer1> <currency2+issuer2> [ --limit=<limit> ]`
