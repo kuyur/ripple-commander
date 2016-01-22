@@ -38,7 +38,7 @@ If you appreciate the work, welcome donate some xrp to `rscxz5PqRrmUaMigyb1mP32T
 
         grant-trustline <issuer> <currency> <limit> [ --allow-rippling ]
 
-**Send money**
+**Send money**, for example, `send rscxz5PqRrmUaMigyb1mP32To1rQDygxAq 20+XRP`.
 
         send <destination> <amount+currency+issuer> [ --source-tag=<source_tag> ] [ --destination-tag=<destination_tag> ] [ --invoice-id=<invoice_id> ]
 
@@ -74,7 +74,7 @@ If you appreciate the work, welcome donate some xrp to `rscxz5PqRrmUaMigyb1mP32T
 
         get-transaction <hash>
 
-**Show list of trusted issuers**, you can add custom gateway by editing `issuers.json`. Refer to `issuers.json.sample` for example.
+**Show list of trusted issuers**, Data is from [https://ripple.com/knowledge_center/gateway-information/](https://ripple.com/knowledge_center/gateway-information/). You can add custom gateways by editing `config.json`.
 
         show-issuers [ --keyword=<issuer_name> ]
 
@@ -94,7 +94,7 @@ If you appreciate the work, welcome donate some xrp to `rscxz5PqRrmUaMigyb1mP32T
 
         remove-account [ <address> ]
 
-**Encrypt wallet**
+**Encrypt wallet**, Use AES to protect the wallet file. Afte encryption, wallet.txt will be removed and wallet.dat will be generated.
 
         encrypt-wallet
 
@@ -102,7 +102,16 @@ If you appreciate the work, welcome donate some xrp to `rscxz5PqRrmUaMigyb1mP32T
 
         decrypt-wallet
 
-## Remain tasks
+## Tasks done
+
+* Trading. (grant trustline, send money, place order, cancel order, etc.)
+* Federation protocol supported. You can withdraw money by sending IOU to automatic bridge.
+* Wallet protection.
+* Account management.
+
+## Remaining tasks
 
 * Command auto-complete.
 * Pipe.
+* Generate new ripple account offline.
+* Offline signature and discard REST api.
