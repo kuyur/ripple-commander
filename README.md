@@ -26,11 +26,11 @@ If you appreciate the work, welcome donate some xrp to `rscxz5PqRrmUaMigyb1mP32T
 
         new-wallet
 
-**Get balance of current wallet**
+**Get balance of current account**
 
         get-balance
 
-**Get trustlines of current wallet**
+**Get trustlines of current account**
 
         get-trustlines
 
