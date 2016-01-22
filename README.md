@@ -11,6 +11,7 @@ If you appreciate the work, welcome donate some xrp to `rscxz5PqRrmUaMigyb1mP32T
 
 3. Download necessary node modules.
 
+        cd ripple-commander
         npm install
 
 4. Before running the commander, you should copy `config.json.sample` and rename the new file to `config.json`. Use a text editor to open `config.json`, edit the `server` field to your private or trusted one. If you trust Ripple Labs 100%, you still can use the default configuration(`https://api.ripple.com/v1`) until it is shutdown.
