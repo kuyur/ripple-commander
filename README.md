@@ -1,5 +1,6 @@
 # ripple-commander
-A command line client for ripple trading.  
+A command line client for ripple trading. Now ripple-commander is using Ripple REST API.
+
 If you appreciate the work, welcome donate some xrp to `rscxz5PqRrmUaMigyb1mP32To1rQDygxAq` .
 
 ## Usage
@@ -12,11 +13,13 @@ If you appreciate the work, welcome donate some xrp to `rscxz5PqRrmUaMigyb1mP32T
 
         npm install
 
-4. Run commander. Account (ripple address) and secret will be required for the first time.
+4. Before running the commander, you should copy `config.json.sample` and rename the new file to `config.json`. Use a text editor to open `config.json`, edit the `server` field to your private or trusted server. If you trust Ripple Labs 100%, you still can use the default configuration(`https://api.ripple.com/v1`) until it is shutdown.
+ 
+5. Run commander. Account (ripple address) and secret will be required for the first time.
 
         node start-commander.js
 
-5. Type **help** to see available commands. Press **Ctrl+C** to exit.
+6. Type **help** to see available commands. Press **Ctrl+C** to exit.
 
 ## Commands
 **Generate a new wallet**
