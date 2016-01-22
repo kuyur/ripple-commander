@@ -3,6 +3,6 @@
 /account.dat
 /wallet.txt
 /wallet.dat
-/issuers.json
+/config.json
 /.vscode
 /.npmrc
