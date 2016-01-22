@@ -1,6 +1,9 @@
 ripple-commander
 ================
 
+###Current
+> * Enable user to override rest server host. 
+
 ###0.1.6
 
 > * Bug fixed: Command will become non-responsive if user enters empty account or password for first login.
