@@ -1,7 +1,7 @@
 ripple-commander
 ================
 
-###Current
+###0.1.7
 > * Enable user to override rest server host. 
 
 ###0.1.6
