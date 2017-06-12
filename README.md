@@ -5,7 +5,7 @@ If you appreciate the work, welcome donate some xrp to `rscxz5PqRrmUaMigyb1mP32T
 
 ## Usage
 1. Install nodejs (>=4.0.0).
-2. Checkout out the source code.
+2. Checkout the source code.
 
         git clone https://github.com/kuyur/ripple-commander.git
 
